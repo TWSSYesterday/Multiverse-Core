@@ -184,8 +184,7 @@
                         <configuration>
                             <artifactSet>
                                 <includes>
-                                    <include>me.main__.util:SerializationConfig</include>
-                                    <include>com.pneumaticraft.commandhandler:CommandHandler</include>
+                                    <include>me.main__.util:SerializationConfig</include>                                  
                                     <include>com.dumptruckman.minecraft:buscript</include>
                                     <include>org.mcstats.bukkit:metrics</include>
                                     <include>com.dumptruckman.minecraft:Logging</include>
@@ -196,10 +195,6 @@
                                 <relocation>
                                     <pattern>me.main__.util</pattern>
                                     <shadedPattern>me.main__.util.multiverse</shadedPattern>
-                                </relocation>
-                                <relocation>
-                                    <pattern>com.pneumaticraft.commandhandler</pattern>
-                                    <shadedPattern>com.pneumaticraft.commandhandler.multiverse</shadedPattern>
                                 </relocation>
                                 <relocation>
                                     <pattern>buscript</pattern>
@@ -291,15 +286,6 @@
             <scope>compile</scope>
         </dependency>
         <!-- End of Economy Dependency -->
-        <!-- Start of CommandHandler Dependency -->
-        <dependency>
-            <groupId>com.pneumaticraft.commandhandler</groupId>
-            <artifactId>CommandHandler</artifactId>
-            <version>8</version>
-            <type>jar</type>
-            <scope>compile</scope>
-        </dependency>
-        <!-- End of CommandHandler Dependency -->
         <!-- Start of Buscript Dependency -->
         <dependency>
             <groupId>com.dumptruckman.minecraft</groupId>
